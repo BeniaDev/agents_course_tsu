@@ -57,7 +57,7 @@ Use **any** of the following (pick one as your primary model):
 | OpenRouter  | Any free api | https://openrouter.ai/models?order=pricing-low-to-high|
 | Local / Free | `Qwen2.5-7B`, `Llama-3.1-8B` | Via [Ollama](https://ollama.com) or [HuggingFace Inference API](https://huggingface.co/inference-api) or check this Unsloth guides: https://unsloth.ai/docs/basics/inference-and-deployment | 
 
-Check shit free API from OpenRouter:
+Check this free API from OpenRouter:
 - https://openrouter.ai/nvidia/nemotron-3-super-120b-a12b:free
 - https://openrouter.ai/qwen/qwen3-next-80b-a3b-instruct:free
 - https://openrouter.ai/openai/gpt-oss-20b:free
