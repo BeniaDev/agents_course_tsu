@@ -44,8 +44,8 @@ You can use any of the following datasets for realistic support tickets, or crea
 
 | Dataset | Link | Notes |
 |---------|------|-------|
-| Bitext Customer Support | https://huggingface.co/datasets/bitext/Bitext-customer-support-llm-chatbot-training-dataset | 27 intent categories, ready to use |
-| Twitter Customer Support | https://huggingface.co/datasets/inaba/TwitterCustomerSupport | Real customer-agent conversations |
+| Bitext Customer Support | [https://huggingface.co/datasets/bitext/Bitext-customer-support-llm-chatbot-training-dataset](https://huggingface.co/datasets/bitext/Bitext-customer-support-llm-chatbot-training-dataset) | 27 intent categories, ready to use |
+| Twitter Customer Support | https://www.kaggle.com/datasets/thoughtvector/customer-support-on-twitter| Real customer-agent conversations |
 | Amazon Reviews | https://huggingface.co/datasets/McAuley-Lab/Amazon-Reviews-2023 | Product reviews, good for sentiment + routing |
 
 ## Recommended Models & APIs
