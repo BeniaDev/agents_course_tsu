@@ -1,4 +1,4 @@
-# Task 3: Safety, RAG & Communication (20 points)
+# Task 3: Safety, RAG & Communication (45 points)
 
 **Covers:** Chapter 5 (Tool Use & RAG), Chapter 6 (Guardrails / Safety Patterns), Chapter 7 (Multi-Agent Communication — A2A / Orchestrator-Worker / Blackboard)
 
@@ -14,7 +14,7 @@ Unlike Tasks 1 and 2, the emphasis here is on **production-grade concerns**: tru
 
 ## What You Need to Build
 
-### 1. Retrieval-Augmented Generation (7 points)
+### 1. Retrieval-Augmented Generation (16 points)
 
 Build a real RAG pipeline over a corpus of **at least 30 documents** (you can use your own markdown files, a Wikipedia dump, a docs site, or any of the suggested datasets below).
 
@@ -25,7 +25,7 @@ Requirements:
 - **Citation discipline**: the final answer must reference retrieved chunks by ID. If no chunk supports a claim, the answer must say so explicitly ("I don't have enough information on X"). **No silent hallucinations.**
 - **Retrieval eval**: hand-label **≥ 8 questions** with the chunk IDs that should be retrieved. Report **Recall@5** and **MRR** in the README.
 
-### 2. Safety & Guardrails (6 points)
+### 2. Safety & Guardrails (14 points)
 
 Wrap the assistant with **layered guardrails**, applied at both the **input** and **output** boundaries:
 
@@ -44,7 +44,7 @@ Requirements:
 - Maintain a **red-team test set of ≥ 6 adversarial prompts** (injection, jailbreak, PII extraction). Report pass/fail per attack in the README.
 - Every guardrail rejection must produce a **structured incident log entry** (timestamp, rule triggered, redacted input, decision).
 
-### 3. Multi-Agent Communication (5 points)
+### 3. Multi-Agent Communication (11 points)
 
 Decompose the system into **at least 3 collaborating agents** that communicate through a **structured message protocol** (not just nested function calls):
 
@@ -110,10 +110,10 @@ Pick **one** for the RAG corpus (or bring your own ≥ 30 documents):
 
 | Criterion | Points | Expectations |
 |-----------|--------|-------------|
-| RAG pipeline | 7 | Real ingestion + hybrid retrieval + reranking. Citations enforced. Recall@5 and MRR reported on a labeled eval set. No silent hallucinations. |
-| Safety & Guardrails | 6 | ≥ 2 input + ≥ 2 output guardrails. One uses Dual-LLM / Action-Selector. Red-team set with ≥ 6 attacks and pass/fail results. Structured incident logs. |
-| Multi-Agent Communication | 5 | ≥ 3 agents communicating via typed messages. One canonical pattern implemented explicitly. At least one feedback loop with retry bound. Full trace log per request. |
-| Code quality & documentation | 2 | Clear module boundaries, schemas in one place, prompts externalized, README with architecture diagram + eval numbers + example trace. |
+| RAG pipeline | 16 | Real ingestion + hybrid retrieval + reranking. Citations enforced. Recall@5 and MRR reported on a labeled eval set. No silent hallucinations. |
+| Safety & Guardrails | 14 | ≥ 2 input + ≥ 2 output guardrails. One uses Dual-LLM / Action-Selector. Red-team set with ≥ 6 attacks and pass/fail results. Structured incident logs. |
+| Multi-Agent Communication | 11 | ≥ 3 agents communicating via typed messages. One canonical pattern implemented explicitly. At least one feedback loop with retry bound. Full trace log per request. |
+| Code quality & documentation | 4 | Clear module boundaries, schemas in one place, prompts externalized, README with architecture diagram + eval numbers + example trace. |
 
 ## Tips
 
